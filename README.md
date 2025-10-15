@@ -8,7 +8,7 @@ It provides a high-quality, open-access dataset of series impedance parameters f
 
 This repository contains:
 
-*   **Impedance Matrices:** A comprehensive dataset of calculated series impedance matrices for various LV cable types. The data is provided in a structured format (e.g., CSV or JSON) for easy use in power system simulation tools.
+*   **Impedance Matrices:** A comprehensive dataset of calculated series impedance matrices for various LV cable types. The data can be exported to a structured format for easy use in power system simulation tools.
 *   **Calculation Methods:** For each cable, impedance values are provided from multiple modeling approaches discussed in the paper:
     *   **Finite Element (FE) Models:** High-fidelity benchmark results obtained from 2D FE simulations. These models serve as the ground truth for our comparisons.
     *   **Analytical Models:** Results from various analytical formulations, including:
@@ -16,7 +16,6 @@ This repository contains:
         *   Analytical models with our proposed corrections for sector-shaped conductor geometry.
         *   Models showing the impact of common simplifications (e.g., neglecting earth return, ignoring sheath shielding effects).
 *   **FE Models:** The source files for the Finite Element models used to generate the benchmark impedance data. This allows for verification, extension, and further analysis by other researchers.
-*   **Shunt Admittance Data:** Although the paper focuses on series impedance, the shunt admittance matrices (`G` and `B` matrices) derived from the FE models are also included for completeness.
 
 ## Relation to the Paper
 
@@ -35,6 +34,6 @@ This repository is a living project. We plan to update it with:
 *   Impedance data for a wider range of cable types and configurations.
 *   Analysis of frequency-dependent effects for harmonic and transient studies.
 *   Models for cables with different material properties (e.g., steel-armored cables).
-*   3D FE models to investigate the impact of cable lay ratios.
+*   Shunt Admittance Data, the shunt admittance matrices (`G` and `B` matrices) derived from the FE models are to be included for completeness.
 
 All code and datasets are provided to ensure the reproducibility of our results and to foster further research into high-fidelity modeling of modern LV distribution networks.
