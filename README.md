@@ -43,8 +43,23 @@ This repository is a living project. We plan to update it with:
 All code and datasets are provided to ensure the reproducibility of our results and to foster further research into high-fidelity modeling of modern LV distribution networks.
 
 ## Acknowledgement
+<img
+src="https://images.squarespace-cdn.com/content/v1/6630d462f8475068fdc6ef20/eb679ecb-0719-4963-acfb-c89eb4dedd5c/Flux50.png"
+  alt="Logo+VLAIO"
+  width="80"
+/>
+<img
+src="https://images.squarespace-cdn.com/content/v1/6630d462f8475068fdc6ef20/89501e45-3c22-4e2c-8425-fe6cc56e1cbf/VLAIO.png"
+  alt="Logo+VLAIO"
+  width="175"
+/>
+<img
+  src="https://github.com/user-attachments/assets/71ea70f1-d0e7-4c23-9f9e-fe3b2c4a1e7d"
+  alt="Logo+Improcap"
+  width="300"
+/>
 
-This work is part of the strategic research project (IMPROCAP), which
+This work is part of the strategic research project ([IMPROCAP](https://www.improcap.eu/)), which
 is enabled by the support and funding of VLAIO (Agency for Innovation
 and Entrepreneurship of the Flemish Government) and Flux50 (Grant N°.
 HBC 2022 0733).
