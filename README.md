@@ -8,14 +8,18 @@ It provides a high-quality, open-access dataset of series impedance parameters f
 
 This repository contains:
 
-*   **Impedance Matrices:** A comprehensive dataset of calculated series impedance matrices for various LV cable types. The data can be exported to a structured format for easy use in power system simulation tools.
-*   **Calculation Methods:** For each cable, impedance values are provided from multiple modeling approaches discussed in the paper:
+**Impedance Matrices `/Impedances_csv_files`:** A comprehensive dataset of calculated series impedance matrices for various LV cable types. The data can be exported to a structured format for easy use in power system simulation tools.
+*   **Calculation Code `test_cable_case_studies.jl` :**  This code computes impedance values are provided from multiple modeling approaches discussed in the paper:
     *   **Finite Element (FE) Models:** High-fidelity benchmark results obtained from 2D FE simulations. These models serve as the ground truth for our comparisons.
     *   **Analytical Models:** Results from various analytical formulations, including:
         *   Classical analytical equations (e.g., based on Carson's work).
         *   Analytical models with our proposed corrections for sector-shaped conductor geometry.
         *   Models showing the impact of common simplifications (e.g., neglecting earth return, ignoring sheath shielding effects).
-*   **FE Models:** The source files for the Finite Element models used to generate the benchmark impedance data. This allows for verification, extension, and further analysis by other researchers.
+
+    > [!NOTE]
+    > The calculation code requires using a development fork of `LineCableModels.jl`. Please clone the fork from [https://github.com/MohamedNumair/LineCableModels.jl/tree/integration/sector-fem-dss](https://github.com/MohamedNumair/LineCableModels.jl/tree/integration/sector-fem-dss) and checkout the `integration/sector-fem-dss` branch that includes sector-shaped cable support and OpenDSS analytical methods. This requirement will remain until the relevant pull requests are merged into the main `LineCableModels.jl` package.
+
+*   **FE Models `FEM-files`:** The source files for the Finite Element models used to generate the benchmark impedance data. This allows for verification, extension, and further analysis by other researchers.
 
 ## Relation to the Paper
 
